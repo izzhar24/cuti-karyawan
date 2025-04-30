@@ -8,9 +8,9 @@ Aplikasi ini dibuat untuk mengelola data **admin**, **pegawai**, dan **cuti pega
 
 - Laravel 7
 - PHP 7.4
-- MySQL / SQLite
+- MySQL
 - Bootstrap 4
-- SweetAlert 2
+- SweetAlert 2 Notification
 
 ---
 
@@ -50,7 +50,7 @@ php artisan db:seed
 ```
 - Seeder akan membuat 1 admin default:
 ```bash
-Email: admin@example.com
+Email: admin@mail.com
 Password: password
 ```
 
@@ -82,10 +82,8 @@ Aplikasi dilengkapi dengan komponen Blade seperti:
 <x-form.password-toggle> – Input password dengan show/hide
 
 📦 Ekstra
-Validasi error ditampilkan menggunakan SweetAlert.
+Validasi error ditampilkan menggunakan Laravel validation & SweetAlert.
 
 Form register dinonaktifkan.
 
 Tersedia fitur edit profil untuk admin.
-
-Tersedia favicon dan logo aplikasi berbasis inisial.
